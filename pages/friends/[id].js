@@ -7,8 +7,6 @@ export const getStaticPaths = async () => {
         params: { id: post.id.toString() },
     }))
 
-    console.log(paths)
-
     // We'll pre-render only these paths at build time.
     // { fallback: false } means other routes should 404.
     return { paths, fallback: false }
